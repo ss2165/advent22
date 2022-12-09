@@ -64,7 +64,9 @@ executable advent22
                       Day4,
                       Day3,
                       Day2,
-                      Day1
+                      Day1,
+                      Day7,
+                      Day8,
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
