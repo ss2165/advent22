@@ -5,17 +5,6 @@ import qualified Data.Map as Map
 solve :: IO ()
 solve = do
     contents <- readFile "inputs/day7.txt"
-    -- let tr = File 2
-    -- let tr1 = treeFromList [("b", treeFromList [("fil2", tr)])]
-    -- let tr2 = treeFromList [("a", tr1), ("fil3", File 3)]
-    -- let tr3 = insertTree ["a", "b", "fil4"] (File 4) tr2
-    -- let tr3 = Branch $ Map.fromList [("t", tr2), ("x", File 5)]
-    -- let tr = addTree "a" (addFile ("me", 2) []) []
-    -- let tr1 = addTree "c" (addFile ("you", 4) []) []
-    -- let tr2 = addTree "d" tr1 (addTree "b" tr [])
-    -- print tr2
-    -- print (dir_sizes tr2)
-    -- print (listSizes "/" $ dir_sizes tr3)
     let commands = map trim $ filter (/= "") $ splitOn "$" contents
     let comio = map ((\x ->(head x, tail x)).lines) commands
 
@@ -29,7 +18,6 @@ solve = do
     let comp x y = compare (snd x) (snd y)
     print (minimumBy comp candidates)
 
-    
 trim :: String -> String
 trim x = case x of
     ' ':s -> s

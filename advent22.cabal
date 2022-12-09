@@ -59,14 +59,15 @@ executable advent22
 
     -- Modules included in this executable, other than Main.
     other-modules:
-                      Day6,
-                      Day5,
-                      Day4,
-                      Day3,
-                      Day2,
-                      Day1,
-                      Day7,
-                      Day8,
+                    --   Day6,
+                    --   Day5,
+                    --   Day4,
+                    --   Day3,
+                    --   Day2,
+                    --   Day1,
+                    --   Day7,
+                    --   Day8,
+                      Day9
 
     -- LANGUAGE extensions used by modules in this package.
     -- other-extensions:
